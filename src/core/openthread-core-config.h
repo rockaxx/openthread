@@ -49,11 +49,9 @@
 
 #ifdef OPENTHREAD_PROJECT_CORE_CONFIG_FILE
 #include OPENTHREAD_PROJECT_CORE_CONFIG_FILE
-#elif defined(OPENTHREAD_CONFIG_CORE_USER_CONFIG_HEADER_ENABLE)
-// This configuration header file should be provided by the user when
-// OPENTHREAD_CONFIG_CORE_USER_CONFIG_HEADER_ENABLE is defined to 1.
+
 #include "openthread-core-user-config.h"
-#endif
+
 
 #ifdef OPENTHREAD_PLATFORM_CORE_CONFIG_FILE
 #include OPENTHREAD_PLATFORM_CORE_CONFIG_FILE
